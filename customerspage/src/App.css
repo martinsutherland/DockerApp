@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.options-container {
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	gap: 1rem;
+	padding: 2rem;
+}
+
+.table-container {
+  background-color: rgba(128, 128, 128, 0.2); /* Transparent grey */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.data-table th, .data-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #f0f0f0;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.data-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.9);
+	animation: dimmer 0.2s;
+}
+
+.modal {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	z-index: 500;
+}
+.modal-content {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	line-height: 1.4;
+  background-color: lightgrey; /* Transparent grey */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	padding: 14px 28px;
+	border-radius: 20px;
+	width: 500px;
+	padding-bottom: 40px;
+}
+
+.close-modal {
+	background-color: lightgray;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 5px 7px;
+	color: black;
+	font-size: x-large;
+	border: none;
+	cursor: pointer;
+}
+
+input {
+	border: none;
+	border-radius: 10px;
+	height: 2rem;
+	width: 24rem;
+}
+
+.input-layout {
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	gap: 0.5rem;
+	text-align: left;
+	padding: 2rem;
+}
+
+.id-display {
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+}
+
+.button {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	background-color: whitesmoke;
+	border: none;
+	border-radius: 10px;
+	width: 8rem;
+	height: 2rem;
+	cursor: pointer;
+	font-family: monospace;
+}
