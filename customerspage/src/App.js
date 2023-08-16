@@ -31,7 +31,7 @@ function App ({ data, handleDelete, addUser, closeModal, closeModalWindow, url, 
   return (
     <>
       <div className='options-container'>
-        <button className='button' onClick={addUser}>Add User</button>
+        <button className='button' onClick={addUser}>Add Customer</button>
       </div>
 
       <div className='table-container'>
